@@ -8,22 +8,18 @@
 
 import java.util.Scanner;
 
-public class Substring{
+public class TamanoCadena{
 	public static void main(String[] args){
-		
 		Scanner lector = new Scanner(System.in);
-		System.out.println("cual es la cadena: ");
-		String cadenaOriginal= lector.nextLine();
-		
-		
-		if(cadenaOriginal.length() <2){
+		System.out.println("cual es la cadena a analizar: ");
+		String cadenaOriginal = lector.nextLine();
+		if(cadenaOriginal.length() < 2 ){
 			System.out.println(cadenaOriginal);
+		}else if (cadenaOriginal == " "){
+			System.out.println(" ");
 		}else{
-			
-			String subcadena = cadenaOriginal.substring(0,2);
-			System.out.println("la cadena es: "+subcadena);
+			System.out.println(cadenaOriginal.substring(0,2));
 		}
+		
 	}
 }
-
-//INVESTIGA SUBSTRING EN https://docs.oracle.com/javase/8/docs/api/

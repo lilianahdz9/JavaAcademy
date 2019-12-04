@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class pinito {
+public class Pinito {
 	public static void main(String[] args) {
 	Scanner lector = new Scanner(System.in);
 	
